@@ -16,10 +16,9 @@ function Home() {
     setLoading(true);
     setResult(null);
 
-    // Simulate a fake news detection result
     setTimeout(() => {
       setLoading(false);
-      const isFake = Math.random() > 0.5; // Randomly determine fake or real
+      const isFake = Math.random() > 0.5;
       setResult(isFake ? 'This news is likely fake.' : 'This news appears to be real.');
     }, 2000);
   };
@@ -31,7 +30,6 @@ function Home() {
 
   return (
     <div>
-      {/* Navbar */}
       <nav className="navbar">
         <a href="#home" className="navbar-logo">Fake News Detector</a>
         <ul className="navbar-links">
@@ -41,7 +39,7 @@ function Home() {
         </ul>
       </nav>
 
-      {/* Main Content */}
+      
       <div className="home-container">
         <h1>Fake News Detection System</h1>
         <p>Enter a news article or URL below to check its authenticity.</p>
