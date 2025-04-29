@@ -1,20 +1,22 @@
 /* Navbar Styles */
 .navbar {
-  position: fixed; /* Make the navbar fixed at the top */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Span the entire width of the screen */
-  display: flex;
-  justify-content: space-between; /* Space between logo and links */
-  align-items: center; /* Center the contents vertically */
+  width: 100%;
   background-color: #007bff;
   padding: 10px 20px;
   color: white;
-  z-index: 1000; /* Ensure it stays above other elements */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
+  position: absolute; /* Keep the logo on the left */
+  left: 20px;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
@@ -22,8 +24,9 @@
 }
 
 .navbar-links {
-  list-style: none;
   display: flex;
+  justify-content: center; /* Center the links */
+  list-style: none;
   gap: 15px;
   margin: 0;
   padding: 0;
@@ -43,10 +46,10 @@
   text-decoration: underline;
 }
 
-/* Adjust the main content to account for the fixed navbar */
+
 .home-container {
   max-width: 600px;
-  margin: 80px auto 20px; /* Add top margin to avoid overlap with the navbar */
+  margin: 80px auto 20px; 
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
